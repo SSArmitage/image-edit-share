@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Rubik:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fe8efb412.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper"></div>
+    </header>
+    <main>
+        <div class="wrapper flexContainer">
+            <!-- Add Picture Container -->
+            <div class="pictureContainer flexContainer" id="pictureContainer">
+                <img src="" alt="" id="output">
+            </div>
+            <!-- Picture Editor Container -->
+            <div class="pictureEditorContainer flexContainer">
+                <div class="checkboxContainer">
+                    <label>Normal</label>
+                    <input type="checkbox" name="filter" id="normal" class="filter">
+                </div>
+
+                <div class="checkboxContainer">
+                    <label>Black and white</label>
+                    <input type="checkbox" name="filter" id="blackAndWhite" class="filter">
+                </div>
+
+                <div class="checkboxContainer">
+                    <label>Sepia</label>
+                    <input type="checkbox" name="filter" id="sepia" class="filter">
+                </div>
+
+                <div class="checkboxContainer">
+                    <label>Invert</label>
+                    <input type="checkbox" name="filter" id="invert" class="filter">
+                </div>
+                <!-- <button class="filter">Normal</button>
+                <button class="filter">Black and white</button>
+                <button class="filter">Sepia</button>
+                <button class="filter">Invert</button> -->
+                <div class="checkboxContainer">
+                    <label>Brightness</label>
+                    <input type="range" class="brightness" id="brightness" min="1" max="200" value="100">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper flexContainer">
+            <label for="file" id="addPicture" class="addPicture"><i class="fas fa-plus"></i></label>
+            <input type="file" id="addPictureButton" class="visuallyHidden" accept="image/*">
+        </div>
+    </footer>
+    <!-- EXTERNAL JS -->
+    <script src="script.js"></script>
+</body>
+</html>

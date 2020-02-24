@@ -1,0 +1,22 @@
+footer {
+    height: 10vh;
+    .flexContainer {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.addPicture {
+    border-radius: 50%;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color:lightsteelblue;
+    height: 50px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+

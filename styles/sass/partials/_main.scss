@@ -1,0 +1,20 @@
+main {
+    height: 80vh;
+}
+
+.pictureContainer,
+.pictureEditorContainer {
+    width: 50%;
+    height: 100%;
+}
+
+.pictureContainer {
+    background-color: black;
+    img {
+        object-fit: contain;
+    }
+}
+
+.pictureEditorContainer {
+    flex-direction: column;
+}
