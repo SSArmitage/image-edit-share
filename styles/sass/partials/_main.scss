@@ -17,4 +17,26 @@ main {
 
 .pictureEditorContainer {
     flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.filterContainer {
+    height: 100%;
+}
+
+.editContainer {
+    width: 80%;
+}
+
+.checkboxContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.range {
+    flex-direction: column;
 }

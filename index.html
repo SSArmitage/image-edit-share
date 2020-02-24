@@ -17,36 +17,58 @@
         <div class="wrapper flexContainer">
             <!-- Add Picture Container -->
             <div class="pictureContainer flexContainer" id="pictureContainer">
-                <img src="" alt="" id="output">
+                <div class="blurContainer filterContainer" id="blurContainer">
+                    <div class="saturationContainer filterContainer" id="saturationContainer">
+                        <div class="contrastContainer filterContainer" id="contrastContainer">
+                            <div class="brightnessContainer filterContainer flexContainer" id="brightnessContainer">
+                                <img src="" alt="" id="output">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Picture Editor Container -->
             <div class="pictureEditorContainer flexContainer">
-                <div class="checkboxContainer">
-                    <label>Normal</label>
-                    <input type="checkbox" name="filter" id="normal" class="filter">
-                </div>
-
-                <div class="checkboxContainer">
-                    <label>Black and white</label>
-                    <input type="checkbox" name="filter" id="blackAndWhite" class="filter">
-                </div>
-
-                <div class="checkboxContainer">
-                    <label>Sepia</label>
-                    <input type="checkbox" name="filter" id="sepia" class="filter">
-                </div>
-
-                <div class="checkboxContainer">
-                    <label>Invert</label>
-                    <input type="checkbox" name="filter" id="invert" class="filter">
-                </div>
-                <!-- <button class="filter">Normal</button>
-                <button class="filter">Black and white</button>
-                <button class="filter">Sepia</button>
-                <button class="filter">Invert</button> -->
-                <div class="checkboxContainer">
-                    <label>Brightness</label>
-                    <input type="range" class="brightness" id="brightness" min="1" max="200" value="100">
+                <div class="editContainer"> 
+                    <div class="checkboxContainer">
+                        <label>Normal</label>
+                        <input type="checkbox" name="filter" id="normal" class="filter">
+                    </div>
+    
+                    <div class="checkboxContainer">
+                        <label>Black and white</label>
+                        <input type="checkbox" name="filter" id="blackAndWhite" class="filter">
+                    </div>
+    
+                    <div class="checkboxContainer">
+                        <label>Sepia</label>
+                        <input type="checkbox" name="filter" id="sepia" class="filter">
+                    </div>
+    
+                    <div class="checkboxContainer">
+                        <label>Invert</label>
+                        <input type="checkbox" name="filter" id="invert" class="filter">
+                    </div>
+                    <!-- <button class="filter">Normal</button>
+                    <button class="filter">Black and white</button>
+                    <button class="filter">Sepia</button>
+                    <button class="filter">Invert</button> -->
+                    <div class="checkboxContainer range">
+                        <label>Brightness</label>
+                        <input type="range" class="brightness" id="brightness" min="1" max="200" value="100">
+                    </div>
+                    <div class="checkboxContainer range">
+                        <label>Contrast</label>
+                        <input type="range" class="contrast" id="contrast" min="1" max="200" value="100">
+                    </div>
+                    <div class="checkboxContainer range">
+                        <label>Saturation</label>
+                        <input type="range" class="saturation" id="saturation" min="1" max="200" value="100">
+                    </div>
+                    <div class="checkboxContainer range">
+                        <label>Blur</label>
+                        <input type="range" class="blur" id="blur" min="0" max="2" value="1", step="0.1">
+                    </div>
                 </div>
             </div>
         </div>

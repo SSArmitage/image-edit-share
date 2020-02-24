@@ -228,10 +228,6 @@ img {
   display: block;
 }
 
-* {
-  border: 1px solid red;
-}
-
 .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,6 +258,39 @@ main {
 }
 
 .pictureEditorContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.filterContainer {
+  height: 100%;
+}
+
+.editContainer {
+  width: 80%;
+}
+
+.checkboxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.range {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
